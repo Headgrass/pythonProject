@@ -16,7 +16,7 @@ def find_list(start_list):
     for i in range(min_num, max_num):
         if min_num + 1 in start_list:
             new_list.append(min_num + 1)
-            min_num += 1
+        min_num += 1
 
     if len(new_list) > 1:
         return new_list, index
@@ -24,9 +24,11 @@ def find_list(start_list):
     return []
 
 try:
-    test = [1, 5, 2, 3, 4, 6, 1, 7, 5, 9]
+    test = [5, 8, 100, 97, 2, 5, 2, 3, 4, 6, 1, 7, 5, 9]
     current_list = find_list(test)
     print(current_list)
 
 except:
     print("Что-то не работает")
+
+# не смог доделать, так как не понял, как зафикисровать конечный последовательный элемент
