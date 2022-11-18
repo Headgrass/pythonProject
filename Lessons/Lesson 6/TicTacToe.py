@@ -6,7 +6,7 @@ def print_field(field_print):
         print("  ".join(field_print[i]))
 
 def player_move (field_print):
-    move = input("Введите кооржинаты вашего входа через запятую: ")
+    move = input("Введите координаты вашего входа через запятую: ")
     move_coord = move.split(',')
     x = int(move_coord[0])
     y = int(move_coord[1])
