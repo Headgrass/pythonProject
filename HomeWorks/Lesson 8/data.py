@@ -13,4 +13,4 @@ def all_views():
 def deleteemloye(id):
     with open("bd_emloyees.txt", 'a') as fo:
         fo.__delattr__(id)
-        print("Новый работник внесен в БД.")
+        print("Новый работник удален из БД.")
